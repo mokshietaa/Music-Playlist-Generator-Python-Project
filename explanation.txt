@@ -1,0 +1,56 @@
+This project is MUSIC PLAYLIST MANAGER.
+Q. What are the pre requsites needed to build this project?
+1.Data types
+2.Variables
+3.Conditional statements if-elif-else
+4.Loops
+5.Functions
+6.File handling
+7.Exception handling
+8.Modules (Pandas, os, time)
+9.Relational operaters (>, <, <=, >=, ==)
+10.Logical operaters (and or not)
+11.String methods and functions(len, .lower(), .str())
+12.format string literal(letting us insert variables directly in the print())
+13.Two types of file .csv and .txt
+14.to_csv() function to convert playlist to csv file
+15. using with open() for .txt files
+16.file.write() to put content in the file.
+17.list named files=[]
+18.list methods .endswith(), .append()
+19.the .isdigit() method for invalid inputs
+20.file.readlines() method to read all the content
+21..strip() function
+22.using os.listdir() to list all folders or file present in the directory
+23.enumerate() function is used to add index(counter) to the items while iterating through the loop
+24.itertuples() method is used to iterate through rowsand return a tuple like object.
+25.using .sleep() method from time module for better user interaction causes a delay of specified seconds.
+26.using .drop() method to remove specified row from the dataframe
+27. .index() to update index after dropping
+28.reset_index() method is used to reset the index of the playlit after dropping/removing drop= true to avoid adding old index.
+29.using ascending to sort the content in playlist.
+
+Q. what is directory? - it is a folder/location in a file system that is used to store files and subdirectories
+
+GENERATE PLAYLIST MAIN FUNCTION 
+-should be able to generate a list of songs(playlist) 
+-through MOOD, GENRE, AND ARTIST
+-should Filter the songs from dataset accordingly
+-filtering songs by user input and comparing it from the dataset 
+-eg: for mood we created a function assign mood it uses 2 feature columns from the dataset i.e. energy and valance and assign mood bed on the values of energy valance creating a new temporary column in df
+-now from the selected mood by the user it compares the temporary column created in the df and then filters the songs
+-similarly for track genre compare the genre entered by users and searches that genre in the column
+-same for ARTIST
+
+SAVE PLAYLIST
+-asks for the file/playlist named
+-asks for file format csv or txt
+-saves playlist in the current working directory i.e. spotify project
+
+DELETE SONGS
+-aks user if they want to delete any song from playlist
+-asks user at which position of song they want to delete
+-uses drop and reset to remove the song ad reset the index so that old index it not counted in playlist
+
+SHOW PLAYLIST
+-Displays the list of playlists available
